@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .container {
+
+            width: 1200px;
+            margin: auto;
+
+        }
+
+        header .container .sub-cont {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 20px 0;
+        }
+
+        header .container .sub-cont .logo {
+            font-size: 30px;
+            font-weight: 500;
+            color: #80B421;
+
+        }
+
+        header .container .sub-cont .logo span {
+            color: rgb(165, 164, 164)
+        }
+
+        header .container .sub-cont .logo {}
+
+        header .container .sub-cont .nav ul {
+            display: flex;
+            gap: 50px;
+
+        }
+
+        header .container .sub-cont .nav ul li a {
+            color: gray
+        }
+
+        .slider .slide {
+
+            height: 550px;
+        }
+
+        .slider .slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #banner {
+            background-color: #80B421;
+        }
+
+        #banner .container .row {
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            /* justify-items: center; */
+        }
+
+        #banner .container .row .banner-cont {
+            font-size: 24px;
+        }
+
+        #banner .container .row .button {
+            margin: 0 80px 0 0;
+            padding: 0 15px;
+            background-color: #DDEBC3;
+            font-size: 12px;
+            border-radius: 3px;
+            line-height: 30px;
+        }
+
+        #about-us {
+            background-color: #2C2C2C;
+            color: white;
+        }
+
+        #about-us .container .heading{
+            text-align: center;
+            padding: 30px 0;
+        }
+        #about-us .container .heading .head{
+            font-size: 30px;
+            font-weight: 700;
+
+            padding: 0 0 10px 0;
+        }
+
+        #about-us .container .heading .details{
+           
+            color: rgb(199, 199, 199);
+            
+        }
+
+        #about-us .container .row{
+            display: flex;
+            gap: 35px;
+            justify-content: space-between;
+
+            padding: 0 0 45px 0;
+        }
+        #about-us .container .row .card .sub-head{
+            font-size: 24px;
+            padding:15px 0;
+            color: lightgray;
+        }
+        #about-us .container .row .card .detials{
+            font-size: 15px;
+            line-height: 25px;
+            color: rgb(140, 140, 140);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="sub-cont">
+                <div class="logo">Gree<span>Crop</span></div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- start slider -->
+    <section class="slider">
+        <div class="slide">
+            <img src="https://webthemez.com/demo/green-corp-flat-free-responsive-mobile-website/images/chess-2.jpg"
+                alt="">
+        </div>
+    </section>
+    <!-- end slider -->
+
+    <!-- start banner  -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner-cont">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum..
+                </div>
+                <div class="button">Start Now!</div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner  -->
+
+    <!-- about us start -->
+    <div id="about-us">
+        <div class="container">
+            <div class="heading">
+                <div class="head">About Us</div>
+                <div class="details">At lorem ipsum available, but the majority have suffered alteration humour or randomised</div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="sub-head">What we do?</div>
+                    <div class="detials">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit occaecat cupidatat non id est laborum.</div>
+                </div>
+
+                <div class="card">
+                    <div class="sub-head"> Why choose us? </div>
+                    <div class="detials">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit occaecat cupidatat non id est laborum.</div>
+                </div>
+
+                <div class="card">
+                    <div class="sub-head">Where are we?</div>
+                    <div class="detials">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit occaecat cupidatat non id est laborum.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us start -->
+</body>
+
+</html>
