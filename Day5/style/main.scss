@@ -6,6 +6,13 @@
     font-family: "Roboto", sans-serif;
 }
 
+@mixin head($color:black){
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0 10px 0;
+    color:$color;
+}
+
 ul {
     list-style: none;
 }
@@ -22,6 +29,13 @@ a {
 
 }
 
+header{
+    background-color:white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
 header .container .sub-cont {
     display: flex;
     justify-content: space-between;
@@ -97,9 +111,7 @@ header .container .sub-cont .nav ul li a {
 }
 
 #about-us .container .heading .head {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 0 0 10px 0;
+    @include head(white)
 }
 
 #about-us .container .heading .details {
@@ -133,6 +145,36 @@ header .container .sub-cont .nav ul li a {
     margin: 0 15px 0 0;
 }
 
+.slider{
+
+    text-align: center;
+    .slider-heading{
+        
+        position: absolute;
+        left:550px;
+        bottom: 250px;
+        z-index: 0;
+        h1{
+            display: inline-block;
+            background-color: #81b421a6;
+           color: white;
+            font-size: 40px;
+            padding: 10px 20px;
+           
+            margin: 0 0 11px 0;
+        }
+        h3{
+            color: #365202;
+            font-size: 25px;
+            text-shadow: 1px 1px white;
+
+        }
+        
+    }
+
+}
+
+
 #out-team {
     .container {
         .heading {
@@ -141,14 +183,15 @@ header .container .sub-cont .nav ul li a {
         }
 
         .head {
-            font-size: 30px;
-            font-weight: 700;
-            padding: 0 0 10px 0;
+            @include head(rgb(44, 247, 44))
         }
     }
 
     .details {}
 }
+
+
+
 
 .row {
     display: flex;
